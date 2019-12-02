@@ -1,6 +1,5 @@
 /*
 * 默认配置文件
-* 也可新建config.custom.js, 会合并覆盖本文件
 * */
 module.exports = {
   // 需要上传至cdn的静态资源文件
