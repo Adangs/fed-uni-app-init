@@ -19,6 +19,8 @@
     - x-request.js  // 全局http请求，this.$http({})
   - App.vue         // 主组件，所有页面都是在App.vue下进行切换的，是页面入口文件
   - main.js         // 入口文件，主要作用是初始化vue实例并使用需要的插件
+  - manifest.json   // 应用的配置文件，用于指定应用的名称、图标、权限等
+  - pages.json      // 文件用来对 uni-app 进行全局配置，决定页面文件的路径、窗口样式、原生的导航栏、底部的原生tabbar 等
   - uni.scss        // 样式风格文件，scss变量
 - README.md         // 项目概述
 ```
