@@ -1,0 +1,43 @@
+{
+	"pages": [{
+    "path": "pages/demo/index",
+    "style": {
+      "enablePullDownRefresh": true
+    }
+  }, {
+    "path": "pages/index/index"
+  }],
+  "subPackages": [{
+    "root": "packages/mall",
+    "pages": [{
+      "path": "detail/index"
+    }]
+  }],
+  "tabBar": {
+    "color": "#A4A4A4",
+    "selectedColor": "#FF2025",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "static/images/nav-lamp-normal.png",
+      "selectedIconPath": "static/images/nav-lamp-pressed.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/my/index",
+      "iconPath": "static/images/nav-me-normal.png",
+      "selectedIconPath": "static/images/nav-me-pressed.png",
+      "text": "我的"
+    }]
+  },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#FF2025",
+    "backgroundColor": "#f8f8f8",
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": false,
+    "transparentTitle": "always",
+    "titlePenetrate": "YES"
+	}
+}
