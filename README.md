@@ -6,7 +6,7 @@
 ```text
 - config.js         // gulp配置文件
 - gulpfile.js       // gulp执行文件
-- src               // 主目录
+- src               // 主目录，HBuilderX导入目录
   - assets          // 运程静态资源目录
   - components      // 公共组
   - config          // 全局配置文件
@@ -32,6 +32,7 @@
 ### 开发环境
 ```
 下载HBuilderX开发工具，使用它进行启动开发编译
+使用HBuilderX导入src目录，进行编译开发
 ```
 
 ### 安装依赖
