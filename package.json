@@ -1,7 +1,7 @@
 {
-    "name": "uni-app-init",
+    "name": "fed-uni-app-init",
     "version": "1.0.0",
-    "description": "feima.inc in wechat mini program",
+    "description": "",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "eslint": "eslint src --ext .js",
@@ -10,14 +10,7 @@
     "pre-commit": [
         "fix"
     ],
-    "repository": {
-        "type": "git",
-        "url": "git@192.168.10.12:front-end/uni-lamp.git"
-    },
-    "keywords": [
-        "wechat mini program"
-    ],
-    "author": "feima fed",
+    "author": "Adang",
     "license": "ISC",
     "devDependencies": {
         "babel-eslint": "^10.0.1",
