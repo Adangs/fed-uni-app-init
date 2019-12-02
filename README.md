@@ -53,15 +53,15 @@
 
 ### 注意事项
 
-1、src/assets，此目录存放的静态资源会上传至运程CDN服务器
+1、`src/assets`，此目录存放的静态资源会上传至运程CDN服务器
 
 2、页面及组件中如果要使用运程CDN静态资源，
 
   a.直接使用全域名地址 
   
-  b.使用x-images组件，src地址以/assets开头（推荐）
+  b.使用`x-images`组件，src地址以`/assets`开头（推荐）
   
-3、因为不支持uni.less全局变量，所以全局改用scss
+3、因为不支持`uni.less`全局变量，所以全局改用`scss`
 
 4、css中引用CDN静态资源方式
  
