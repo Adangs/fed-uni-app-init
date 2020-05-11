@@ -1,6 +1,6 @@
 {
-  "name" : "",
-  "appid" : "",
+  "name" : "项目名称",
+  "appid" : "uni项目id",
   "description" : "",
   "versionName" : "1.0.0",
   "versionCode" : "100",
@@ -9,7 +9,7 @@
     "enable" : true
   },
   "mp-weixin" : {
-    "appid" : "",
+    "appid" : "wxe909acd671d1a5a1",
     "setting" : {
       "urlCheck" : false,
       "es6" : true,
