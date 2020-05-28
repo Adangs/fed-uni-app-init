@@ -13,7 +13,7 @@
  */
 
 /* CDN URL */
-$uni-cdn-url: 'https://img.alicdn.com/static/assets';
+$uni-cdn-url: 'https://alicdn.madaomall.com/static/fed/wxmp/99mall/v2.0.0';
 @function cdn($url){
   @return url($uni-cdn-url + $url)
 }
@@ -21,11 +21,11 @@ $uni-cdn-url: 'https://img.alicdn.com/static/assets';
 /* 颜色变量 */
 $uni-color-white: #fff;
 $uni-color-default: #333333;
-$uni-color-primary: #FF1D24;
-$uni-color-secondary: #FF613C;
-$uni-color-warning: #FFA340;
-$uni-color-success: #129B00;
-$uni-color-error: #dd524d;
+$uni-color-primary: #0084FF;
+$uni-color-secondary: mix($uni-color-white, $uni-color-primary, 20%);
+$uni-color-warning: #F9AB59;
+$uni-color-success: #35CD82;
+$uni-color-error: #F56C6C;
 
 /* 弱色 */
 $uni-color-primary-light-1: mix($uni-color-white, $uni-color-primary, 10%);

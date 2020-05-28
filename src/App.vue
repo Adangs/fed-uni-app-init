@@ -1,7 +1,7 @@
 <script>
 	export default {
     globalData: {
-      assets: 'https://img.alicdn.com/static/assets'
+      assets: 'https://alicdn.madaomall.com/static/fed/wxmp/99mall/v2.0.0'
     },
     onLaunch() {
 			console.log('App Launch')

@@ -168,18 +168,6 @@
     &.is-scroll{
       ._content ._li{ flex-shrink: 0;}
     }
-    // type=home
-    &.is-home.is-large{
-      ._content{
-        font-size: $uni-font-size-sm;
-        ._li._active{
-          font-weight: bold; font-size: $uni-font-size-lg;
-          ._underline{
-            width: 34px; height: 14px; background: url('../../static/images/icon-smile.png') no-repeat; background-size: cover;
-          }
-        }
-      }
-    }
     // 大号
     &.is-large{
       ._content{ height: $uni-height-size-lg; line-height: $uni-height-size-lg; font-size: $uni-font-size-lg;}

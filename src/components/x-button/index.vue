@@ -1,19 +1,20 @@
 <template>
-  <form report-submit @submit="onSubmit" @reset="onReset">
-    <button
-      hover-class="none"
-      :class="classNameList"
-      :plain="plain"
-      :disabled="disabled || loading"
-      :loading="loading"
-      :scope="scope"
-      :open-type="openType"
-      :form-type="formType"
-      @click="onClick"
-    >
-      <slot />
-    </button>
-  </form>
+  <button
+    hover-class="none"
+    :class="classNameList"
+    :plain="plain"
+    :disabled="disabled || loading"
+    :loading="loading"
+    :scope="scope"
+    :open-type="openTypeVal"
+    :form-type="formType"
+    :data-info="dataInfo"
+    @click="onClick"
+    @getAuthorize="onGetAuthorize"
+    @getPhoneNumber="onGetAuthorize"
+  >
+    <slot />
+  </button>
 </template>
 
 <script>
@@ -54,6 +55,10 @@
         type: Boolean,
         default: false
       },
+      formId: {
+        type: Boolean,
+        default: true
+      },
       openType: {
         type: String,
         default: ''
@@ -61,21 +66,27 @@
       formType: {
         type: String,
         default: 'submit'
-      }
+      },
+      dataInfo: {
+        type: Object,
+        default: {}
+      },
     },
     data() {
-      return {};
+      return {
+
+      }
     },
     computed: {
       // class列表
       classNameList() {
-        const name = ['x-button']
+        const name = ['x-button'];
+        name.push(`is-${this.size}`);
         if (this.plain) {
           // 按钮是否镂空，背景色透明
           name.push('is-plain')
         } else {
           name.push(`is-${this.type}`)
-          name.push(`is-${this.size}`)
         }
         if (this.round) {
           name.push('is-round')
@@ -84,33 +95,19 @@
           name.push('is-disabled')
         }
         return name.join(' ')
+      },
+      openTypeVal(){
+        return /getUserInfo|getPhoneNumber/gi.test(this.openType) ? '' : this.openType;
       }
     },
     watch: {},
-    created() {
-
-    },
+    created() {},
     methods: {
-      onClick() {
-        console.log('click')
-        this.$emit('click')
+      async onClick() {
+        this.$emit('click', this.dataInfo);
       },
-      onSubmit({ detail }) {
-        const { formId } = detail
-        console.log('formId-> ', formId)
-        if (formId === 'the formId is a mock one') return
-        this.$http({
-          method: 'post',
-          error: false,
-          url: '/mall/form/save',
-          data: {
-            formId
-          }
-        })
-        this.$emit('submit')
-      },
-      onReset() {
-        this.$emit('reset')
+      onGetAuthorize() {
+        this.$emit('getAuthorize', ...arguments)
       }
     }
   };

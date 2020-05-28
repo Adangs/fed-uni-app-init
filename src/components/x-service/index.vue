@@ -3,12 +3,12 @@
     <!-- #ifndef MP-ALIPAY -->
     <x-button plain open-type="contact">
       <view class="_pic">
-        <x-image src="/assets/images/icon-service.png" />
+        <x-image src="/assets/images/icon_service.png" />
       </view>
     </x-button>
     <!-- #endif -->
     <!-- #ifdef MP-ALIPAY -->
-    <contact-button tnt-inst-id="NUp_6wCQ" scene="SCE00114248" size="120rpx" icon="https://alicdn.madaomall.com/static/fed/wxmp/lamp/v2.0.0/assets/images/icon-service.png" />
+    <contact-button tnt-inst-id="NUp_6wCQ" scene="SCE00114248" size="120rpx" icon="https://alicdn.madaomall.com/static/fed/wxmp/99mall/v2.0.0/assets/images/icon-icon_service.png" />
     <!-- #endif -->
   </view>
 </template>
