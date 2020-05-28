@@ -134,6 +134,9 @@
       // 设置位置
       setOffset() {
         const query = uni.createSelectorQuery()
+        if (!this.isAlipay) {
+          query.in(this)
+        }
         query.selectAll('._li').boundingClientRect(data => {
           // 选中后的样式有变化，宽度不一样了，所以重新计算右侧位置数据
           let offsetLeft = 0

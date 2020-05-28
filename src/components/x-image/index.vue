@@ -40,7 +40,7 @@
           xAliProcess = `_${this.size}x${this.size}_.webp`
         }
 
-        const src = this.src.replace(/^\/assets/gi, 'https://alicdn.madaomall.com/static/fed/wxmp/99mall/v2.0.0')
+        const src = this.src.replace(/^\/assets/gi, 'https://alicdn.madaomall.com/static/fed/wxmp/99mall/v2.0.0/assets')
         if (src.indexOf('?') !== -1) {
           return src
         } else if (/^https:\/\/alicdn/gi.test(src) && !/\.svg$/gi.test(src)) {

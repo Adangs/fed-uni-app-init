@@ -115,6 +115,5 @@
   .x-service{
     position: fixed; right: 30px; top: 80vh; z-index: 996;
     ._pic{ width: 120px; height: 120px;}
-    form{ display: block; width: 100%;}
   }
 </style>
